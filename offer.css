@@ -1,0 +1,188 @@
+body
+{
+    background-color: #404040;
+    /* background-image: url("background.jpg"); */
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+#wrapper
+{
+    width:100%;
+}
+#header
+{
+    width:100%;
+    padding: 20px;
+    text-align: center;
+}
+
+#logo
+{
+    width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Trebuchet MS", sans-serif;
+    display: inline-block;
+
+}
+
+nav
+{
+    width: 980px;
+    padding: 10px 0;
+    background-color: #efb943;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+    border-top: 1px solid #a5802e;
+    border-bottom: 1px solid #a5802e;
+}
+
+ol
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
+}
+
+ol a
+{
+    color: #000000;
+    text-decoration: none;
+    display: block;
+}
+ 
+ol > li
+{
+    float: left;
+    width: 150px;
+    height: 40px;
+    border-right: 1px dashed #a5802e;
+}
+ 
+ol > li:first-child
+{
+    border-left: 1px dashed #a5802e;
+}
+ 
+ol > li:hover
+{
+    background-color: #a5802e;
+}
+ 
+ol > li:hover > a
+{
+    color: #efb943;
+}
+
+#content
+{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding-top: 10px;
+    background-color: white;
+}
+
+#socials
+{
+    width:100%;
+    text-align: center;
+    background-color: #292929;
+}
+ 
+#socialdivs
+{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+#fb
+{
+    width: 250px;
+    height: 155px;
+    float:left;
+}
+ 
+#fb:hover
+{
+    background-color: #4668b3;
+}
+ 
+#yt
+{
+    width: 250px;
+    height: 155px;
+    float:left;
+}
+ 
+#yt:hover
+{
+    background-color: #d94348;
+}
+ 
+#tw
+{
+    width: 250px;
+    height: 155px;
+    float:left;
+}
+ 
+#tw:hover
+{
+    background-color: #3095d3;
+}
+ 
+#gplus
+{
+    width: 250px;
+    height: 155px;
+    float:left;
+}
+ 
+#gplus:hover
+{
+    background-color: #d95333;
+}
+ 
+footer
+{
+    text-align: center;
+    background-color: #222222;
+    padding: 30px;
+    color:#a5802e;
+}
+
+
+
+#offer {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#offer td, #offer th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#offer tr:nth-child(even){background-color: #f2f2f2;}
+
+#offer tr:hover {background-color: #ddd;}
+
+#offer th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #efb943;
+    color: black;
+}
+
