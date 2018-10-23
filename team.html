@@ -7,76 +7,83 @@
   <title>Mohawk Barbershop</title>
   <meta name="description" content="Barbershop">
   <meta name="author" content="BiP">
-  <link rel = "Stylesheet" type = "text/css" href="style.css"/>
-  <link rel="stylesheet" type="text/css" href="team.css">
+  <link rel = "stylesheet" type = "text/css" href="style.css"/>
+  <link rel = "stylesheet" type="text/css" href="team.css">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
 
 </head>
 
 <body>
     <div>
-        <h1>Mohawk Barbershop</h1>
-        <img src="logo.jpg" alt="logo salonu"/>
+        <div id = "header">
+            <div id = "logo_wrapper">
+                <img src="logo2.png" alt="logo salonu" id="logo"/>
+                <h1> <span style="color: #efb943">Mohawk</span> Barbershop</h1>
+            </div>
+        </div>
         <div>
             <nav>
-                <a href="offer.html">Oferta</a>
-                <a href="products.html">Produkty</a>
-                <a href="about.html">O nas</a>
-                <a href="team.html">Zespół</a>
+                <ol>
+                    <li><a href="offer.html">Oferta</a></li>
+                    <li><a href="products.html">Produkty</a></li>
+                    <li><a href="about.html">O nas</a></li>
+                    <li><a href="team.html">Zespół</a></li>
+                </ol>
             </nav>
         </div>
-    </div>
-    <div>
-        <h2>Nasz Zespół</h2>
-        <ul>
-            <li>
-                <div>
-                    <img src="team_member.jpg" alt="team member"/>
-                    <p>JURAND ZE SPYCHOWA</p>
-                    <p>MASTER BARBER</p>
-                    <a href="reservation.html">REZERWUJ TERMIN</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <img src="team_member.jpg" alt="team member"/>
-                    <p>ZBYSZKO Z BOGDAŃCA</p>
-                    <p>MŁODSZY GOLIBRODA</p>
-                    <a href="reservation.html">REZERWUJ TERMIN</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <img src="team_member.jpg" alt="team member"/>
-                    <p>JAGIENKA</p>
-                    <p>GOLIBRODA</p>
-                    <a href="reservation.html">REZERWUJ TERMIN</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <img src="team_member.jpg" alt="team member"/>
-                    <p>MAĆKO Z BOGDAŃCA</p>
-                    <p>STARSZY GOLIBRODA</p>
-                    <a href="reservation.html">REZERWUJ TERMIN</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <img src="team_member.jpg" alt="team member"/>
-                    <p>PAN WOŁODYJOWSKI</p>
-                    <p>MASTER BARBER</p>
-                    <a href="reservation.html">REZERWUJ TERMIN</a>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <img src="team_member.jpg" alt="team member"/>
-                    <p>DANKA</p>
-                    <p>MŁODSZY GOLIBRODA</p>
-                    <a href="reservation.html">REZERWUJ TERMIN</a>
-                </div>
-            </li>
-        </ul>
+        <div id="content">
+            <h2>Nasz Zespół</h2>
+            <ul id="team">
+                <li class="team_member">
+                    <div>
+                        <img src="team_member.jpg" alt="team member" class="team_member_img"/>
+                        <p class="nickname">JURAND ZE SPYCHOWA</p>
+                        <p class="level">MASTER BARBER</p>
+                        <a href="reservation.html">REZERWUJ TERMIN</a>
+                    </div>
+                </li>
+                <li class="team_member">
+                    <div>
+                        <img src="team_member.jpg" alt="team member" class="team_member_img"/>
+                        <p class="nickname">ZBYSZKO Z BOGDAŃCA</p>
+                        <p class="level">MŁODSZY GOLIBRODA</p>
+                        <a href="reservation.html">REZERWUJ TERMIN</a>
+                    </div>
+                </li>
+                <li class="team_member">
+                    <div>
+                        <img src="team_member.jpg" alt="team member" class="team_member_img"/>
+                        <p class="nickname">JAGIENKA</p>
+                        <p class="level">GOLIBRODA</p>
+                        <a href="reservation.html">REZERWUJ TERMIN</a>
+                    </div>
+                </li>
+                <li class="team_member">
+                    <div>
+                        <img src="team_member.jpg" alt="team member" class="team_member_img"/>
+                        <p class="nickname">MAĆKO Z BOGDAŃCA</p>
+                        <p class="level">STARSZY GOLIBRODA</p>
+                        <a href="reservation.html">REZERWUJ TERMIN</a>
+                    </div>
+                </li>
+                <li class="team_member">
+                    <div>
+                        <img src="team_member.jpg" alt="team member" class="team_member_img"/>
+                        <p class="nickname">PAN WOŁODYJOWSKI</p>
+                        <p class="level">MASTER BARBER</p>
+                        <a href="reservation.html">REZERWUJ TERMIN</a>
+                    </div>
+                </li>
+                <li class="team_member">
+                    <div>
+                        <img src="team_member.jpg" alt="team member" class="team_member_img"/>
+                        <p class="nickname">DANKA</p>
+                        <p class="level">MŁODSZY GOLIBRODA</p>
+                        <a href="reservation.html">REZERWUJ TERMIN</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
     <footer>
         <p>Mohawk Barbershop ul. Juranda 13</p>

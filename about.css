@@ -1,0 +1,38 @@
+
+#saloon{
+    float: left;
+}
+
+#content
+{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding-top: 10px;
+    position: relative;
+}
+
+#description{   
+top: 500px; 
+}
+
+#info{
+    position: relative;
+    left: 50px;
+    width: auto;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+footer{
+    margin-top: 20px;
+}
+
+h2,h4{
+    color: #efb943;
+}
+
+p{
+    margin: 0
+}
