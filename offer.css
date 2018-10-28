@@ -6,7 +6,7 @@
     margin-right: auto;
     text-align: justify;
     padding-top: 10px;
-    background-color: white;
+    background-color: #404040;
 }
 
 #socials
@@ -85,7 +85,7 @@ footer
 }
 
 
-
+/* 
 #offer {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -93,13 +93,55 @@ footer
 }
 
 #offer td, #offer th {
-    border: 1px solid #ddd;
     padding: 8px;
 }
 
 #offer tr:nth-child(even){background-color: #f2f2f2;}
 
+#offer tr:nth-child(odd){background-color: white;}
+
 #offer tr:hover {background-color: #ddd;}
+
+#offer th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #efb943;
+    color: black;
+} */
+
+#offer {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#offer td, #offer th 
+{
+    padding: 8px;
+}
+
+#offer tr:nth-child(even){
+    background-color: #505050;
+    color:white;
+}
+
+
+#offer tr:nth-child(odd){
+    background-color: #606060;
+    color:white;
+}
+
+#offer tr:hover {
+    background-color: #ddd;
+    color:black;
+}
+
+#offer tr:hover a {
+    
+    color:#a5802e;
+}
+
 
 #offer th {
     padding-top: 12px;
