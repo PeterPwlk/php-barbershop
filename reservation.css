@@ -1,0 +1,49 @@
+#content{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: #efb943;
+    text-align: center;
+}
+
+h2{
+ text-align: center;
+}
+
+table{
+    text-align: justify;
+}
+
+select{
+    margin: 20px;
+    font-size: 16px;
+}
+
+input{
+    padding: 5px;
+    margin-left: 20px;
+}
+
+input[type=submit]{
+    padding: 6px;
+    font-size: 18px;
+    margin-left: 0px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    border: none;
+    transition: all .2s ease-in-out;
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 4px 4px 2px 0px rgba(165,128,46,0.4);
+}
+
+input:focus{
+    background-color: #efb943;
+    border: 2px solid black;
+}

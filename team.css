@@ -22,6 +22,7 @@ h2{
 
 .team_member{
     margin: 20px;
+    padding-bottom: 10px;
     border: 2px solid #efb943;
     background-color: #4d4c4c;
     transition: all .2s ease-in-out;
