@@ -1,7 +1,40 @@
-body
+#content
 {
-    background-color: white;
-    font-family: Bookman;
-    font-size:20px;
-    color:black;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding-top: 10px;
+    position: relative;
+    background-color:#505050;
+    color:white;
+    padding:20px;
+}
+
+a
+{
+    color: white;
+}
+
+ul > li >ul
+{
+    list-style: none;
+}
+
+.product
+{
+    width: 700px;
+    margin-left:0px;
+    margin-right:auto;
+    padding:10px;
+    border: 2px solid #efb943;
+    background-color: #4d4c4c;
+    box-shadow: 10px 10px 5px 0px rgba(165,128,46,0.4);
+
+}
+
+
+h4
+{
+    color:#efb943;
 }

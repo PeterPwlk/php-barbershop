@@ -5,12 +5,15 @@
 
 #content
 {
-    width: 980px;
+    width: 940px;
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
     padding-top: 10px;
     position: relative;
+    background-color:#505050;
+    color:white;
+    padding:20px;
 }
 
 #description{   
