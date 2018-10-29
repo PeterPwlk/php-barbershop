@@ -29,12 +29,15 @@ ul
 .product
 {   
     width: 700px;
+    margin-top:20px;
+    margin-bottom: 20px;
     margin-left:0px;
     margin-right:auto;
     padding:10px;
     border: 2px solid #efb943;
     background-color: #4d4c4c;
     box-shadow: 10px 10px 5px 0px rgba(165,128,46,0.4);
+
 
 }
 
