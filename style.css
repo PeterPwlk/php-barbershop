@@ -1,7 +1,6 @@
 body
 {
     background-color: #404040;
-    /* background-image: url("background.jpg"); */
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     height:100%;
@@ -81,13 +80,84 @@ ol > li:first-child
  
 ol > li:hover
 {
-    background-color: #a5802e;
+    background-color: #75633a;
 }
  
 ol > li:hover > a
 {
     color: #efb943;
 }
+
+ol > li > ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    display: none;
+}
+
+ol > li:hover > ul
+{
+    display: block;
+}
+
+ol > li > ul > li
+{
+    background-color:#f7cb6c;
+    position: relative;
+    z-index: 100;
+    border-top: 1px dashed #a5802e;
+}
+
+
+ol > li > ul > li:hover
+{
+    background-color: #75633a;
+}
+ 
+ol > li > ul > li:hover > a
+{
+    color: #efb943;
+}
+
+
+ol > li > ul > li > ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    display: none;
+    
+}
+
+ol > li:hover > ul > li:hover > ul
+{
+    display: block;
+}
+
+
+ol > li > ul > li > ul > li
+{
+    background-color:#f7cb6c;
+    position: relative;
+    z-index: 100;
+    border-top: 1px dashed #751b1b;
+    left:100%;
+    top:-100%;
+}
+
+ol > li > ul > li:hover > ul > li:hover
+{
+    background-color: #75633a;
+}
+
+ol > li > ul > li:hover > ul > li:hover > a
+{
+    color: #efb943;
+}
+
 
 footer
 {
