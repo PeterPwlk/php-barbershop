@@ -9,6 +9,13 @@
     text-align: center;
 }
 
+form{
+    background-color: #606060;
+    padding: 0px 20px 20px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #efb943;
+}
+
 h2{
  text-align: center;
 }
