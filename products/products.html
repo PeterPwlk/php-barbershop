@@ -11,7 +11,7 @@
   <link rel = "Stylesheet" type = "text/css" href="../css/style.css"/>
   <link rel = "stylesheet" type="text/css" href="products.css">
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
-
+  <script src="products.js"></script>
 </head>
 
 <body>
@@ -54,20 +54,20 @@
                     <legend>Kategoria:</legend>
             
             <div>
-                    <input type="radio" id="wlosy"
-                           name="kat" value="wlosy" checked />
+                    <input type="radio" id="radio1"
+                           name="kat" value="hair" onclick="filterProducts()"/>
                     <label for="wlosy">Włosy</label>
                 </div>
         
                 <div>
-                    <input type="radio" id="broda"
-                           name="kat" value="broda" />
+                    <input type="radio" id="radio2"
+                           name="kat" value="beard"  onclick="filterProducts()"/>
                     <label for="broda">Broda</label>
                 </div>
         
                 <div>
-                    <input type="radio" id="cialo"
-                           name="kat" value="cialo" />
+                    <input type="radio" id="radio3"
+                           name="kat" value="body"  onclick="filterProducts()"/>
                     <label for="cialo">Ciało</label>
                 </div>
 
@@ -75,7 +75,7 @@
         </div>
 
         <div>
-                
+            <div id="hair" class="kat">
                <h3>Pomady</h3>
                 <ul>
                     
@@ -117,7 +117,7 @@
                     </ul> 
                     </li>
                     <li>
-                    
+                
                     
                     <h4>UPPERCUT DELUXE</h4>
                     <ul>
@@ -150,8 +150,8 @@
                     </ul>
                     </li>
                 </ul>
-           
-                
+            </div>
+            <div id="beard" class="kat">  
                 <h3>Olejki</h3>
                 <ul>
                     <li>
@@ -184,7 +184,8 @@
                     </ul>
                     </li>
                 </ul>
-            
+            </div>  
+            <div id="body" class="kat">
                 <h3>Mydło</h3>
                 <ul>
                     <li>
@@ -204,6 +205,7 @@
                     </ul>
                     </li>
                 </ul>
+            </div>
         </div>
     </div>
     <footer>
