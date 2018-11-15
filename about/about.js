@@ -1,26 +1,26 @@
 		
-			var numer = Math.floor(Math.random()*4)+1;
+			let numer = Math.floor(Math.random()*4)+1;
 	
-			var timer1 = 0;
+			let timer1 = 0;
 			
 			
 			function setslide(nrslajdu)
 			{
 				clearTimeout(timer1);
 				numer = nrslajdu - 1;
-				setTimeout("zmienslajd()", 200);
+				setTimeout("nextslide()", 200);
 			}
 			
 		
-			function zmienslajd()
+			function nextslide()
 			{
-				numer++; if (numer>4) numer=1;
+				if (++numer>4) numer=1;
 				
-				var plik = "<img src=\"salon" + numer + ".jpg\"  width = 615 height = 451/>";
+				let plik = "<img src=\"salon" + numer + ".jpg\"  width = 615 height = 451/>";
 				
 				document.getElementById("saloon").innerHTML = plik;
 				
-				timer1 = setTimeout("zmienslajd()", 5000);
+				timer1 = setTimeout("nextslide()", 5000);
 			
 			}
 				

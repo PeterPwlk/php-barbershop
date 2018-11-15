@@ -10,3 +10,28 @@ function filterProducts(){
         }
     })
 }
+
+let items = [];
+
+const orderButtons = document.querySelectorAll('.btorder');
+orderButtons.forEach(button => {
+    button.addEventListener("click", () => addToKoszyk(button.value))
+})
+
+
+function addToKoszyk(item){
+    items.push(item);
+    console.log(items);    
+    showKoszyk();
+}
+
+function showKoszyk(){
+            
+    items.forEach(item =>{
+
+
+    })
+	let koszyk = items;
+				
+	document.getElementById("koszyk").innerHTML = koszyk;
+}

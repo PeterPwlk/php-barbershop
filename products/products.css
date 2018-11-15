@@ -11,6 +11,10 @@
     padding:20px;
 }
 
+#koszyk
+{
+    min-height: 100px;
+}
 a
 {
     color: white;
