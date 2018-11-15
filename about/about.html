@@ -9,10 +9,11 @@
   <meta name="author" content="BiP">
   <link rel = "Stylesheet" type = "text/css" href="../css/style.css"/>
   <link rel = "Stylesheet" type = "text/css" href="about.css"/>
+  <script src="about.js"></script>>
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
 </head>
 
-<body>
+<body onload = "zmienslajd()">
     <div id = "header">
         <div id = "logo_wrapper">
             <img src="../logo2.png" alt="logo salonu" id="logo"/>
@@ -44,7 +45,12 @@
         </nav>
     </div>
     <div id="content">
-        <img src="salon.jpg" alt="Barbershop" id="saloon"/>
+        <div id = "saloon"></div>
+        <span onclick="setslide(1)" style="cursor:pointer;">[ 1 ]</span>
+		<span onclick="setslide(2)" style="cursor:pointer;">[ 2 ]</span>
+		<span onclick="setslide(3)" style="cursor:pointer;">[ 3 ]</span>
+		<span onclick="setslide(4)" style="cursor:pointer;">[ 4 ]</span>
+
         <div id="info">
                 <h4>DANE KONTAKTOWE</h4>
                 <p>Mohawk Barbershop</p>
