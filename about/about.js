@@ -1,26 +1,25 @@
 		
-			let numer = Math.floor(Math.random()*4)+1;
-	
-			let timer1 = 0;
+			let number = Math.floor(Math.random()*4)+1;
+			let timer = 0;
 			
 			
 			function setslide(nrslajdu)
 			{
-				clearTimeout(timer1);
-				numer = nrslajdu - 1;
-				setTimeout("nextslide()", 200);
+				clearTimeout(timer);
+				number = nrslajdu - 1;
+				nextslide();
 			}
 			
 		
 			function nextslide()
 			{
-				if (++numer>4) numer=1;
+				if (++number>4) number=1;
 				
-				let plik = "<img src=\"salon" + numer + ".jpg\"  width = 615 height = 451/>";
+				let plik = "<img src=\"salon" + number + ".jpg\"  width = 615 height = 451/>";
 				
 				document.getElementById("saloon").innerHTML = plik;
 				
-				timer1 = setTimeout("nextslide()", 5000);
+				timer = setTimeout("nextslide()", 5000);
 			
 			}
 				

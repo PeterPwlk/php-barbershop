@@ -43,11 +43,10 @@ function addToKoszyk(product){
 }
 
 function showKoszyk(){
-    let items = '';  
+    let items = 'KOSZYK: </br>';  
     koszyk.forEach(item =>{
         items += item.name + ' x' + item.quantity + '</br>';
     })
 	
-				
 	document.getElementById("koszyk").innerHTML = items;
 }
