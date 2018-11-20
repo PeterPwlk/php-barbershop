@@ -25,7 +25,7 @@
             <nav>
                 <ol>
                     <li><a href="../offer/offer.html">Oferta</a></li>
-                    <li><a href="../products/products.html">Produkty</a>
+                    <li><a onclick="showProducts()">Produkty</a>
                         <ul>
                                 <li><a href="#">Włosy</a></li>
                                 <li><a href="#">Broda</a></li>
@@ -42,174 +42,175 @@
                     </li>
                     <li><a href="../about/about.html">O nas</a></li>
                     <li><a href="../team/team.html">Zespół</a></li>
+                    <li><a onclick="showCart()">KOSZYK</a></li>
                 </ol>
             </nav>
         </div>
 
+   
     <div id="content">
-        <h2>Produkty</h2>
-        <div>
-            <fieldset>
-                    <legend>Kategoria:</legend>
-            
+        <div id = "cart">
+            <h3>Koszyk</h3>
+        </div>
+        <div id="products">
+            <h2>Produkty</h2>
             <div>
-                    <input type="radio" id="radio1"
-                           name="kat" value="hair" onclick="filterProducts()"/>
-                    <label for="wlosy">Włosy</label>
-                </div>
-        
-                <div>
-                    <input type="radio" id="radio2"
-                           name="kat" value="beard"  onclick="filterProducts()"/>
-                    <label for="broda">Broda</label>
-                </div>
-        
-                <div>
-                    <input type="radio" id="radio3"
-                           name="kat" value="body"  onclick="filterProducts()"/>
-                    <label for="cialo">Ciało</label>
-                </div>
-
-            </fieldset>
-        </div>
-
-
-        <div id = "koszyk">
-        
-
-
-        </div>
-        <div>
-            <div id="hair" class="kat">
-               <h3>Włosy</h3>
-                <ul>
-                    
-                    <li>
-                            
-                        <div class = "brand">
-                        <h4>REUZEL</h4>
-                        <a href = "https://www.reuzelpomade.com/" title = "Zobacz oficjalną strone REUZEL" target = "blank">STRONA INTERNETOWA</a>
-                        </div>
-
-
-                    <ul>
-                        <li>
-                            <div class = "product">
-                                <img src="reuzelgreen.png" width= 200 alt="reuzelgreen"/>
-
-                                <div class = "productinfo">
-                                <p>Reuzel <b>GREEN</b></p>
-                                <p>Na bazie wosku</p>
-                                <p>Medium hold, medium shine</p>
-                                <button class = "btorder" value= "Reuzel GREEN">ZAMÓW</button>
-                                </div>
-
-                            </div>
-                        
-                        </li>
-                        <li>
-                            <div class = "product">
-                                    <img src="reuzelgreen.png" width= 200 alt="reuzelgreen"/>
-
-                                <div class = "productinfo">
-                                <p>Reuzel <b>PINK</b></p>
-                                <p>Na bazie wosku</p>
-                                <p>High hold, high shine</p>
-                                <button class = "btorder" value= "Reuzel PINK">ZAMÓW</button>
-                                </div>
-                            </div>
-                        </li>
-                    </ul> 
-                    </li>
-                    <li>
+                <fieldset>
+                        <legend>Kategoria:</legend>
                 
-                    
-                    <h4>UPPERCUT DELUXE</h4>
-                    <ul>
-                        <li>
-                            <div class = "product">
-                                    <img src="uppercut.png" width= 200 alt="uppercut"/>               
-
-                                <div class = "productinfo">
-                                <p>Uppercut DELUXE - <b>FEATHERWEIGHT</b></p>
-                                <p>Na bazie wody</p>
-                                <p>Easy hold, matt</p>
-                                <button class = "btorder" value= "UpperCut FEATHERWEIGHT">ZAMÓW</button>
-                                </div>
-                            </div>
-                        </li>
-                    
-
-                        <li>
-                            <div class = "product">
-                                    <img src="uppercut.png" width= 200 alt="uppercut"/>               
-
-                                <div class = "productinfo">
-                                <p>Uppercut DELUXE - <b>MONSTERHOLD</b></p>
-                                <p>Wosk</p>
-                                <p>High hold </p>
-                                <button class = "btorder" value= "UpperCut MONSTERHOLD">ZAMÓW</button>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    </li>
-                </ul>
+                <div>
+                        <input type="radio" id="radio1"
+                                name="kat" value="hair" onclick="filterProducts()"/>
+                        <label for="wlosy">Włosy</label>
+                    </div>
+            
+                    <div>
+                        <input type="radio" id="radio2"
+                                name="kat" value="beard"  onclick="filterProducts()"/>
+                        <label for="broda">Broda</label>
+                    </div>
+            
+                    <div>
+                        <input type="radio" id="radio3"
+                                name="kat" value="body"  onclick="filterProducts()"/>
+                        <label for="cialo">Ciało</label>
+                    </div>
+    
+                </fieldset>
             </div>
-            <div id="beard" class="kat">  
-                <h3>Broda</h3>
-                <ul>
-                    <li>
-                    <h4>BLUEBEARD'S REVENGE</h4>
+    
+            <div>
+                <div id="hair" class="kat">
+                    <h3>Włosy</h3>
                     <ul>
+                        
                         <li>
-                            <div class = "product">
-                                    <img src="bluerev.png" width= 200 alt="bluerev"/>
-
-                                <div class = "productinfo">
-                                <p>Bluebeards Revenge <b>CUBAN BLEND</b></p>
-                                <p>Olejek do brody</p>
-                                <button class = "btorder" value= "Bluebeard's CUBAN BLEND">ZAMÓW</button>
-                                </div>
+                                
+                            <div class = "brand">
+                            <h4>REUZEL</h4>
+                            <a href = "https://www.reuzelpomade.com/" title = "Zobacz oficjalną strone REUZEL" target = "blank">STRONA INTERNETOWA</a>
                             </div>
+    
+    
+                        <ul>
+                            <li>
+                                <div class = "product">
+                                    <img src="reuzelgreen.png" width= 200 alt="reuzelgreen"/>
+    
+                                    <div class = "productinfo">
+                                    <p class="productName">Reuzel <b>GREEN</b></p>
+                                    <p>Na bazie wosku</p>
+                                    <p>Medium hold, medium shine</p>
+                                    <button class = "btorder" value= "Reuzel GREEN">ZAMÓW</button>
+                                    </div>
+    
+                                </div>
+                            
+                            </li>
+                            <li>
+                                <div class = "product">
+                                        <img src="reuzelgreen.png" width= 200 alt="reuzelgreen"/>
+    
+                                    <div class = "productinfo">
+                                    <p class="productName">Reuzel <b>PINK</b></p>
+                                    <p>Na bazie wosku</p>
+                                    <p>High hold, high shine</p>
+                                    <button class = "btorder" value= "Reuzel PINK">ZAMÓW</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul> 
                         </li>
-                
-
                         <li>
-                            <div class = "product">
-                                    <img src="bluerev.png" width= 200 alt="bluerev"/>
-
-                                <div class = "productinfo">
-                                <p>Bluebeards Revenge <b>CLASSIC BLEND</b></p>
-                                <p>Olejek do brody</p>
-                                <button class = "btorder" value= "Bluebeard's CLASSICBLEND">ZAMÓW</button>
+                    
+                        
+                        <h4>UPPERCUT DELUXE</h4>
+                        <ul>
+                            <li>
+                                <div class = "product">
+                                        <img src="uppercut.png" width= 200 alt="uppercut"/>               
+    
+                                    <div class = "productinfo">
+                                    <p class="productName">Uppercut DELUXE - <b>FEATHERWEIGHT</b></p>
+                                    <p>Na bazie wody</p>
+                                    <p>Easy hold, matt</p>
+                                    <button class = "btorder" value= "UpperCut FEATHERWEIGHT">ZAMÓW</button>
+                                    </div>
                                 </div>
-                            </div>
+                            </li>
+                        
+    
+                            <li>
+                                <div class = "product">
+                                        <img src="uppercut.png" width= 200 alt="uppercut"/>               
+    
+                                    <div class = "productinfo">
+                                    <p class="productName">Uppercut DELUXE - <b>MONSTERHOLD</b></p>
+                                    <p>Wosk</p>
+                                    <p>High hold </p>
+                                    <button class = "btorder" value= "UpperCut MONSTERHOLD">ZAMÓW</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                         </li>
                     </ul>
-                    </li>
-                </ul>
-            </div>  
-            <div id="body" class="kat">
-                <h3>Ciało</h3>
-                <ul>
-                    <li>
-                    <h4>DAMN GOOD SOAP</h4>
+                </div>
+                <div id="beard" class="kat">  
+                    <h3>Broda</h3>
                     <ul>
                         <li>
-                            <div class = "product">
-                                    <img src="damngoodsoap.png" width= 200 alt="dgsoap"/>
-
-                                <div class = "productinfo">
-                                <p>DAMN GOOD SOAP</p>
-                                <p>Mydło do ciała</p>
-                                <button class = "btorder" value= "Damn good soap">ZAMÓW</button>
+                        <h4>BLUEBEARD'S REVENGE</h4>
+                        <ul>
+                            <li>
+                                <div class = "product">
+                                        <img src="bluerev.png" width= 200 alt="bluerev"/>
+    
+                                    <div class = "productinfo">
+                                    <p class="productName">Bluebeards Revenge <b>CUBAN BLEND</b></p>
+                                    <p>Olejek do brody</p>
+                                    <button class = "btorder" value= "Bluebeard's CUBAN BLEND">ZAMÓW</button>
+                                    </div>
                                 </div>
-                            </div>
+                            </li>
+                    
+    
+                            <li>
+                                <div class = "product">
+                                        <img src="bluerev.png" width= 200 alt="bluerev"/>
+    
+                                    <div class = "productinfo">
+                                    <p class="productName">Bluebeards Revenge <b>CLASSIC BLEND</b></p>
+                                    <p>Olejek do brody</p>
+                                    <button class = "btorder" value= "Bluebeard's CLASSICBLEND">ZAMÓW</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                         </li>
                     </ul>
-                    </li>
-                </ul>
+                </div>  
+                <div id="body" class="kat">
+                    <h3>Ciało</h3>
+                    <ul>
+                        <li>
+                        <h4>DAMN GOOD SOAP</h4>
+                        <ul>
+                            <li>
+                                <div class = "product">
+                                        <img src="damngoodsoap.png" width= 200 alt="dgsoap"/>
+    
+                                    <div class = "productinfo">
+                                    <p class="productName">DAMN GOOD SOAP</p>
+                                    <p>Mydło do ciała</p>
+                                    <button class = "btorder" value= "Damn good soap">ZAMÓW</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
