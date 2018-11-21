@@ -1,19 +1,15 @@
-#content{
-    width: 980px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    display: flex;
-    justify-content: center;
-    color: #efb943;
-    text-align: center;
-}
-
 form{
     background-color: #606060;
     padding: 0px 20px 20px 20px;
     margin-bottom: 20px;
     border: 1px solid #efb943;
+    color: #efb943;
+    text-align: center;
+    width:auto;
+}
+
+h5{
+    color: #efb943;
 }
 
 h2{

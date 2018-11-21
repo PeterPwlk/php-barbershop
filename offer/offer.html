@@ -9,6 +9,7 @@
   <meta name="author" content="Bob and Parker">
   <link rel = "stylesheet" type = "text/css" href="../css/style.css"/>
   <link rel = "stylesheet" type = "text/css" href="offer.css"/>
+  <link rel = "Stylesheet" type = "text/css" href="../team/reservation.css"/>
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
   <link href="../css/fontello.css" rel="stylesheet" type="text/css" />
 </head>
@@ -59,39 +60,111 @@
                             <td>Strzyżenie klasyczne</td>
                             <td>50zł</td>
                             <td>
-                                <a href="../reservation/reservation.html">REZERWUJ</a>
+                                <button class="reserveButton">REZERWUJ</button>
                             </td>
                         </tr>
                         <tr>
                             <td>Strzyżenie brody i pielęgnacja</td>
                             <td>40zł</td>
                             <td>
-                                <a href="../reservation/reservation.html">REZERWUJ</a>
+                                <button class="reserveButton">REZERWUJ</button>
                             </td>
                         </tr>
                         <tr>
                             <td>Cięcie długich włosów</td>
                             <td>70zł</td>
                             <td>
-                                <a href="../reservation/reservation.html">REZERWUJ</a>
+                                <button class="reserveButton">REZERWUJ</button>
                             </td>
                         </tr>
                         <tr>
                             <td>Strzyżenie maszynką</td>
                             <td>30zł</td>
                             <td>
-                                <a href="../reservation/reservation.html">REZERWUJ</a>
+                                <button class="reserveButton">REZERWUJ</button>
                             </td>
                         </tr>
                         <tr>
                             <td>Strzyzenie klasyczne + Broda Spa</td>
                             <td>100zł</td>                   
                             <td>
-                                <a href="../reservation/reservation.html">REZERWUJ</a>
+                                <button class="reserveButton">REZERWUJ</button>
                             </td>
                         </tr>
                     </table>
+               
+
+                <div id="reservation" style="display:none">
+                    <div>
+                        <form>
+                            <h2>REZERWACJA</h2>
+                            <h5 id="selectedOffer"></h5>
+                            <h5 id="price"></h5>
+                            <select>
+                                <option value="JURAND ZE SPYCHOWA">JURAND ZE SPYCHOWA</option>
+                                <option value="ZBYSZKO Z BOGDANCA">ZBYSZKO Z BOGDANCA</option>
+                                <option value="JAGIENKA">JAGIENKA</option>  
+                                <option value="MAĆKO Z BOGDAŃCA">MAĆKO Z BOGDAŃCA</option>
+                                <option value="PAN WOŁODYJOWSKI">PAN WOŁODYJOWSKI</option>
+                                <option value="DANKA">DANKA</option>                
+                            </select>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p>Imię</p>
+                                    </td>
+                                    <td>
+                                        <input type="text" autocomplete="name" required autofocus/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Nazwisko</p>
+                                    </td>
+                                    <td>
+                                        <input type="text" autocomplete="family-name" required/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Nr. telefonu</p>
+                                    </td>
+                                    <td>
+                                        <input type="tel" autocomplete="tel"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>E-mail</p>
+                                    </td>
+                                    <td>
+                                        <input type="email" autocomplete="email"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Data</p>
+                                    </td>
+                                    <td>
+                                        <input type="date" required/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>Godzina</p>
+                                    </td>
+                                    <td>
+                                        <input type="time" required/>
+                                    </td>
+                                </tr>
+                            </table>
+                            <input type="submit" value="REZERWUJ">
+                        </form>
+                    </div>
+                    <button onclick="goBack()">POWRÓT</button>
+                 </div>
                 </div>
+
 
                 <div id="socials">
                         <div id="socialdivs">
@@ -116,4 +189,5 @@
             </footer>
         </div>
         </body>
+        <script src="offer.js"></script>
 </html>
