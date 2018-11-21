@@ -45,11 +45,20 @@
         </nav>
     </div>
     <div id="content">
-        <div id = "saloon"></div>
-        <span onclick="setslide(1)" style="cursor:pointer;">[ 1 ]</span>
-		<span onclick="setslide(2)" style="cursor:pointer;">[ 2 ]</span>
-		<span onclick="setslide(3)" style="cursor:pointer;">[ 3 ]</span>
-		<span onclick="setslide(4)" style="cursor:pointer;">[ 4 ]</span>
+        <div id = "slider">
+            <div id = "saloon"></div>
+            <a class="prev" onclick="previousslide()">&#10094;</a>
+            <a class="next" onclick="nextslide()">&#10095;</a>
+            <div class = "dots">
+                    <span class="dot" onclick="setslide(1)"></span> 
+                    <span class="dot" onclick="setslide(2)"></span> 
+                    <span class="dot" onclick="setslide(3)"></span> 
+                    <span class="dot" onclick="setslide(4)"></span> 
+                    
+            </div>
+        </div>
+        
+
 
         <div id="info">
                 <h4>DANE KONTAKTOWE</h4>

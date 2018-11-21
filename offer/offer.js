@@ -3,6 +3,8 @@ reserveButtons.forEach(button => {
     button.addEventListener("click", ()=>reserve(button.parentElement.parentElement))
 })
 
+document.getElementById("reservationform").addEventListener("submit", submitReservation);
+
 function reserve(parent){
     const reservation = document.getElementById('reservation');
     const offer = document.getElementById('offer');
@@ -17,4 +19,8 @@ function reserve(parent){
 function goBack(){
    document.getElementById('reservation').style.display = 'none';
    document.getElementById('offer').style.display = 'table';
+}
+
+function submitReservation(){
+    alert("Dokonałeś rezerwacji");
 }
