@@ -3,7 +3,7 @@
 {
     float:left;
     position:relative;
-    z-index: 100;
+    z-index: 50;
 }
 #saloon
 {
@@ -23,7 +23,7 @@
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    z-index:1000;
+    z-index:50;
   }
   
   .next {
@@ -32,7 +32,7 @@
   }
   
   .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: #efb943;
   }
 
   .dot {
@@ -40,14 +40,14 @@
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: #404040;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
   }
   
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: #efb943;
   }
 
   .dots{
