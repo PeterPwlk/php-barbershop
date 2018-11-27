@@ -15,11 +15,11 @@
 				clearDots();
 				if (++number>4) number=1;
 				dots[number-1].className += " active";
-				let plik = "<img src=\"salon" + number + ".jpg\"  width = 615 height = 451/>";
+				let plik = "<img src=\"about" + number + ".jpg\"  width = 615 height = 451/>";
 				
 				document.getElementById("saloon").innerHTML = plik;
 				
-				timer = setTimeout("nextslide()", 5000);
+				timer = setTimeout("nextslide()", 1000);
 			
 			}
 
@@ -29,7 +29,7 @@
 				if (--number<1) number=4;
 				dots[number-1].className += " active";
 
-				let plik = "<img src=\"salon" + number + ".jpg\"  width = 615 height = 451/>";
+				let plik = "<img src=\"about" + number + ".jpg\"  width = 615 height = 451/>";
 				document.getElementById("saloon").innerHTML = plik;
 				timer = setTimeout("nextslide()", 5000);
 			}
