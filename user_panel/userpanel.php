@@ -49,9 +49,12 @@
                 $date = "<p>"."Termin:  ".$_POST["date"]."  ".$_POST["hour"]."</p>";
                 $service =  "<p>"."Usługa:  ".$_POST["service"]."</p>";
                 $barber =  "<p>"."Barber:  ".$_POST["barber"]."</p>";
+                $name = preg_replace('/\s/', '', $_POST["name"]);
+                $lastname = preg_replace('/\s/', '', $_POST["surname"]);
+                $customer = "<p>Klient: ".$name." ".$lastname."</p>";
                 print "<div class='reservation'>".
                     "<p>Rezerwacja</p>".
-                    $date.$service.$barber
+                    $customer.$date.$service.$barber
                     ."</div>"
             ?>
         </div>
