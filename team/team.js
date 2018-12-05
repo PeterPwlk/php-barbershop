@@ -10,7 +10,6 @@ barbers.forEach(barber => {
     const option = document.createElement("option");
     option.setAttribute("value", name);
     option.appendChild(document.createTextNode(name));
-    console.log(option);
     barberSelect.appendChild(option);
 });
 
