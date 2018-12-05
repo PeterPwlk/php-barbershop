@@ -14,7 +14,7 @@ h2{
     width: 100%;
 }
 
-#team{
+#team_members{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
