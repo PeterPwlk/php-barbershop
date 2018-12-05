@@ -3,10 +3,21 @@ function getReservations(){
     .then(resp => resp.json())
     .then(resp => {
         const reservations = resp.map(JSON.parse);
-        const reservation_list = document.getElementById("content");
-        reservations.forEach(reservation => {
-            reservation_list.appendChild(createReservation(reservation));
-        });
+        console.log(reservations);
+        const reservation_list = document.getElementById("reservations_list");
+        const content = document.getElementById("content");
+        if(reservations.length === 0 ){
+            const p = document.createElement("p");
+            p.style = "text-align: center";
+            p.appendChild(document.createTextNode("Brak rezerwacji"));
+            content.insertBefore(p,reservation_list);
+        } else {
+            if(content.children.length === 2)content.removeChild(content.children[0]);
+            reservations.forEach(reservation => {
+                reservation_list.appendChild(createReservation(reservation));
+            });
+        }
+        
     })
 }
 
