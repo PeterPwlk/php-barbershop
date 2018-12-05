@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require_once "../connect.php";
 
     $connection = @new mysqli($host,$db_user,$db_password,$db_name);
@@ -7,7 +8,7 @@
         echo "Error".$connection->connect_error;
     } else{
         //TODO change customer to session
-        $customer = "test@gmail.com";
+        $customer = $_SESSION['email'];
         $sql = "SELECT barber,usluga,data FROM rezerwacje WHERE klient='$customer'";
         $reservations = [];
         $result = mysqli_query($connection,$sql);

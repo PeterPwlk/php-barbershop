@@ -53,7 +53,7 @@
                             </ul>
                     </li>
                     <li><a href="../index.php">O nas</a></li>
-                    <li><a href="../team/team.html">Zespół</a></li>
+                    <li><a href="../team/team.php">Zespół</a></li>
                 </ol>
             </nav>
         </div>

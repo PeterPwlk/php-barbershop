@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require_once "../connect.php";
 
     $connection = @new mysqli($host,$db_user,$db_password,$db_name);
@@ -8,7 +9,7 @@
         $connection->close();
     } else {
         $barber = $_POST["barber"];
-        $customer = $_POST["email"];
+        $customer = $_SESSION["email"];
         $service = $_POST["service"];
         $date = $_POST["date"]." ".$_POST["hour"];
         $sql = "INSERT INTO rezerwacje(barber,klient,usluga,data)

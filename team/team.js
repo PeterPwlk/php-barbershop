@@ -89,4 +89,6 @@ function setReserveButtons(){
     })
 }
 
+document.body.onload() = function(){ loadContent()};
+
 
