@@ -49,6 +49,26 @@ nav
     border-bottom: 1px solid #a5802e;
 }
 
+#user_info
+{
+    margin-left:-100%;
+    color:#efb943;
+    float:right;
+    padding:10px;
+}
+
+#user_info  a 
+{
+    color: grey;
+    text-decoration: none;
+}
+
+#user_info  a:visited
+{
+    color: grey;
+    text-decoration: none;
+}
+
 ol
 {
     padding: 0;

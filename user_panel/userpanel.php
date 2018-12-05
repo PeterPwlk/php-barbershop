@@ -39,7 +39,7 @@
                                 </li>
                             </ul>
                     </li>
-                    <li><a href="../index.html">O nas</a></li>
+                    <li><a href="../index.php">O nas</a></li>
                     <li><a href="../team/team.html">Zespół</a></li>
                 </ol>
             </nav>

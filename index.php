@@ -1,3 +1,9 @@
+<?php
+ 
+ session_start();
+
+ ?>
+
 <!doctype html>
 
 <html lang="pl">
@@ -14,6 +20,22 @@
 </head>
 
 <body onload = "nextslide()">
+
+    <div id = "user_info">
+        <?php  
+        if ((isset($_SESSION['loggedin'])) && ($_SESSION['loggedin']==true))
+        {
+            print "<p>".$_SESSION['imie']." ".$_SESSION['nazwisko']."</p>"."<p><a href = 'user_panel/logout.php'>Wyloguj się</a></p>";
+        }
+        else 
+        {
+            print "<p><a href = 'user_panel/loginscreen.php'>Zaloguj się</a></p>";
+            print "<p><a href = 'user_panel/signup.php'>Załóż konto</a></p>";
+        }
+
+        ?>
+
+    </div>
     <div id = "header">
         <div id = "logo_wrapper">
             <img src="logo2.png" alt="logo salonu" id="logo"/>
@@ -39,7 +61,7 @@
                             </li>
                         </ul>
                 </li>
-                <li><a href="index.html">O nas</a></li>
+                <li><a href="index.php">O nas</a></li>
                 <li><a href="team/team.html">Zespół</a></li>
             </ol>
         </nav>
