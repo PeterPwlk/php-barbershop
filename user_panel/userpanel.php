@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah%7CLato:400,700&amp;subset=latin-ext" rel="stylesheet">
 </head>
 
-<body>
+<body onload="getReservations()">
     <div>
         <div id = "header">
             <div id = "logo_wrapper">
@@ -45,21 +45,11 @@
             </nav>
         </div>
         <div id="content">
-            <?php
-                $date = "<p>"."Termin:  ".$_POST["date"]."  ".$_POST["hour"]."</p>";
-                $service =  "<p>"."Usługa:  ".$_POST["service"]."</p>";
-                $barber =  "<p>"."Barber:  ".$_POST["barber"]."</p>";
-                $name = preg_replace('/\s/', '', $_POST["name"]);
-                $lastname = preg_replace('/\s/', '', $_POST["surname"]);
-                $customer = "<p>Klient: ".$name." ".$lastname."</p>";
-                print "<div class='reservation'>".
-                    "<p>Rezerwacja</p>".
-                    $customer.$date.$service.$barber
-                    ."</div>"
-            ?>
+            <ul id="reservations_list"></ul>
         </div>
     <footer>
         <p>Mohawk Barbershop ul. Juranda 13</p>
     </footer>
 </body>
+<script src="userpanel.js"></script>
 </html>

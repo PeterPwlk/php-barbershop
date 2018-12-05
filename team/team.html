@@ -10,10 +10,11 @@
   <link rel = "stylesheet" type = "text/css" href="../css/style.css"/>
   <link rel = "stylesheet" type = "text/css" href="team.css">
   <link rel = "Stylesheet" type = "text/css" href="reservation.css"/>
+
   <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah%7CLato:400,700&amp;subset=latin-ext" rel="stylesheet">
 </head>
 
-<body>
+<body onload="loadContent()">
     <div>
         <div id = "header">
             <div id = "logo_wrapper">
@@ -48,60 +49,17 @@
         <div id="content">
             <div id="team">
                     <h2>Nasz Zespół</h2>
-                    <ul id="team">
-                        <li class="team_member">
-                            <img src="team_member.jpg" alt="team member" class="team_member_img"/>
-                            <p class="nickname">JURAND ZE SPYCHOWA</p>
-                            <p class="level">MASTER BARBER</p>
-                            <button class="reserveButton" value="JURAND ZE SPYCHOWA">REZERWUJ TERMIN</button>
-                        </li>
-                        <li class="team_member">
-                            <img src="team_member.jpg" alt="team member" class="team_member_img"/>
-                            <p class="nickname">ZBYSZKO Z BOGDAŃCA</p>
-                            <p class="level">MŁODSZY GOLIBRODA</p>
-                            <button class="reserveButton" value="ZBYSZKO Z BOGDAŃCA">REZERWUJ TERMIN</button>
-                        </li>
-                        <li class="team_member">
-                            <img src="team_member.jpg" alt="team member" class="team_member_img"/>
-                            <p class="nickname">JAGIENKA</p>
-                            <p class="level">GOLIBRODA</p>
-                            <button class="reserveButton" value="JAGIENKA">REZERWUJ TERMIN</button>
-                        </li>
-                        <li class="team_member">
-                            <img src="team_member.jpg" alt="team member" class="team_member_img"/>
-                            <p class="nickname">MAĆKO Z BOGDAŃCA</p>
-                            <p class="level">STARSZY GOLIBRODA</p>
-                            <button class="reserveButton" value="MAĆKO Z BOGDAŃCA">REZERWUJ TERMIN</button>
-                        </li>
-                        <li class="team_member">
-                            <img src="team_member.jpg" alt="team member" class="team_member_img"/>
-                            <p class="nickname">PAN WOŁODYJOWSKI</p>
-                            <p class="level">MASTER BARBER</p>
-                            <button class="reserveButton" value="PAN WOŁODYJOWSKI">REZERWUJ TERMIN</button>
-                        </li>
-                        <li class="team_member">
-                            <img src="team_member.jpg" alt="team member" class="team_member_img"/>
-                            <p class="nickname">DANKA</p>
-                            <p class="level">MŁODSZY GOLIBRODA</p>
-                            <button class="reserveButton" value="DANKA">REZERWUJ TERMIN</button>
-                        </li>
+                    <ul id="team_members">
+                        
                     </ul>
             </div>
             <div id="reservation" style="display:none">
                     <div>
-                        <form action="../user_panel/userpanel.php" method="POST">
+                        <form action="../reservation/reserve.php" method="POST">
                             <h2>REZERWACJA</h2>
                             <select id="selectedBarber" name="barber">
                             </select>
-                            <select name="service">
-                            <optgroup label="Golenie">
-                                <option value="Królewskie Golenie">Królewskie Golenie</option>
-                                <option value="Golenie">Golenie</option>
-                            </optgroup>
-                            <optgroup label="Strzyżenie">
-                                <option value="Królewskie Strzyżenie">Królewskie Strzyżenie</option>
-                                <option value="Strzyżenie boków">Strzyżenie boków</option>
-                            </optgroup>
+                            <select id="selectedService" name="service">
                             </select>
                             <table>
                                 <tr>
