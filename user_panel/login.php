@@ -27,6 +27,7 @@
                 $_SESSION['email'] = $row['email'];
                 $_SESSION['imie'] = $row['imie'];
                 $_SESSION['nazwisko'] = $row['nazwisko'];
+                $_SESSION['tel'] = $row['tel'];
                 
                                  
                 unset($_SESSION['blad']);

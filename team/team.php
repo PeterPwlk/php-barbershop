@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah%7CLato:400,700&amp;subset=latin-ext" rel="stylesheet">
 </head>
 
-<body>
+<body onload = "loadContent()">
     <div id="user_info">
         <?php  
         if ((isset($_SESSION['loggedin'])) && ($_SESSION['loggedin']==true))
@@ -76,9 +76,9 @@
                     <form action="../reservation/reserve.php" method="POST">
                         <h2>REZERWACJA</h2>
                         <?php
-                                    print "<p>".$_SESSION('imie')." ".$_SESSION('nazwisko')."</p>";
-                                    print "<p>".$_SESSION('email')."</p>";
-                                    print "<p>".$_SESSION('tel')."</p>";
+                                    print "<p>".$_SESSION['imie']." ".$_SESSION['nazwisko']."</p>";
+                                    print "<p>".$_SESSION['email']."</p>";
+                                    print "<p>".$_SESSION['tel']."</p>";
                                 ?>
                         <select id="selectedBarber" name="barber">
                         </select>

@@ -87,8 +87,6 @@ function setReserveButtons(){
     reserveButtons.forEach(button => {
         button.addEventListener("click", ()=>reserve(button.value))
     })
-}
-
-document.body.onload() = function(){ loadContent()};
+};
 
 
