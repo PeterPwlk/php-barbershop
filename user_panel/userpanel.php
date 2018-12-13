@@ -66,7 +66,8 @@
             </nav>
         </div>
         <div id="content">
-            <ul id="reservations_list"></ul>
+            <div id="reservations_list">
+            </div>
         </div>
     <footer>
         <p>Mohawk Barbershop ul. Juranda 13</p>

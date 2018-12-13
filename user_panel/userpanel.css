@@ -7,14 +7,17 @@
 }
 
 #reservations_list{
+    
+    margin-bottom: 20px;
+}
+
+#reservations_list ul {
     display:flex;
     flex-wrap: wrap;
     justify-content:center;
-    margin-bottom: 20px;
-
 }
 
-.reservation{
+.reservationLI{
     margin: 20px;
     padding: 10px;
     border: 2px solid #efb943;
@@ -22,4 +25,89 @@
     transition: all .2s ease-in-out;
     list-style: none;
     color:white;
+}
+
+#reservationTable {
+    border-collapse: collapse;
+    width: 100%;
+    color:white;
+}
+
+#reservationTable td, #reservationTable th 
+{
+    padding: 15px;
+}
+
+#reservationTable tr:nth-child(even){
+    background-color: #505050;
+    color:white;
+}
+
+
+#reservationTable tr:nth-child(odd){
+    background-color: #606060;
+    color:white;
+}
+
+#reservationTable tr:hover {
+    background-color: #ddd;
+    color:black;
+}
+
+#reservationTable tr:hover a {
+    
+    color:#a5802e;
+}
+
+#reservationTable tr:hover button{
+    background: #efb943;
+    color:black;
+}
+
+
+#reservationTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #efb943;
+    color: black;
+}
+
+.reservations-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.reservations-list-item-info
+{
+    display: inline-block;
+}
+
+.reservations-list-item{
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left:0px;
+    margin-right:30px;
+    padding:10px;
+    border: 2px solid #efb943;
+    background-color: #4d4c4c;
+    transition: all .2s ease-in-out;
+}
+
+.reservations-list-item:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 5px 0px rgba(165,128,46,0.4);
+}
+
+.reservations-list-item img{
+    width: 220px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+.reservations-list-item p{
+    color: white;
+    text-align: center;
 }
