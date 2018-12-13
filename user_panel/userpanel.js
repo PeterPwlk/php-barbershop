@@ -1,4 +1,5 @@
 function getReservations(){
+    document.getElementById(getCookie('display')).checked = true;
     fetch("../reservation/getUserReservations.php")
     .then(resp => resp.json())
     .then(resp => {
@@ -12,11 +13,9 @@ function getReservations(){
             content.insertBefore(p,reservation_list);
         } else {
             if(content.children.length === 2)content.removeChild(content.children[0]);
-            const display_setting = 'min';
-            console.log(getCookie("PHPSESSID"));
-            console.log(document.cookie);
+            const display_setting = getCookie("display");
             switch (display_setting){
-                case 'min':{
+                case 'medium':{
                     const ul = document.createElement("ul");
                     reservations.forEach(reservation => {
                         ul.appendChild(createReservationMed(reservation));
@@ -24,7 +23,7 @@ function getReservations(){
                     reservation_list.appendChild(ul);
                     break;
                 }
-                case 'med':{
+                case 'min':{
                     const table = document.createElement("table");
                     const tr = document.createElement("tr");
                     const barber = document.createElement("th");

@@ -1,5 +1,11 @@
 <?php
     session_start();
+
+    if(!isset($_COOKIE['display'])) {
+        setcookie('display', 'min');
+    }
+    echo $_COOKIE['display'];
+
 ?>
 
 <!doctype html>
@@ -66,6 +72,38 @@
             </nav>
         </div>
         <div id="content">
+            <h3>Panel użytkownika</h3>
+            <div class = 'radio'>
+            <form action="displayMethod.php" method="post">
+
+                <fieldset>
+                        <legend align = 'center'>Tryb wyświetlania:</legend>
+                
+                <div class = 'radiobutton'>
+                        <input type="radio" id="full"
+                                name="tryb" value="full" />
+                        <label for="full">Pełne</label>
+                    </div>
+            
+                    <div class = 'radiobutton'>
+                        <input type="radio" id="medium"
+                                name="tryb" value="medium" />
+                        <label for="medium">Średnie</label>
+                    </div>
+            
+                    <div class = 'radiobutton'> 
+                        <input type="radio" id="min"
+                                name="tryb" value="min" />
+                        <label for="min">Minimalne</label>
+                    </div>
+
+                    <div class = 'submit'>
+                        <input type="submit" value="Zastosuj" />
+                    </div>
+    
+                </fieldset>
+    </form>
+            </div>
             <div id="reservations_list">
             </div>
         </div>
