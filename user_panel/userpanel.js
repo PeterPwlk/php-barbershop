@@ -1,4 +1,5 @@
 function getReservations(){
+    document.getElementById(getCookie('display')).checked = true;
     fetch("../reservation/getUserReservations.php")
     .then(resp => resp.json())
     .then(resp => {
