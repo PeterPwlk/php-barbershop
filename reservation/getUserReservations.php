@@ -7,7 +7,6 @@
     if($connection->connect_errno!=0){
         echo "Error".$connection->connect_error;
     } else{
-        //TODO change customer to session
         $customer = $_SESSION['email'];
         $sql = "SELECT barber,usluga,data FROM rezerwacje WHERE klient='$customer'";
         $reservations = [];

@@ -26,6 +26,7 @@
         if ((isset($_SESSION['loggedin'])) && ($_SESSION['loggedin']==true))
         {
             print "<p>".$_SESSION['imie']." ".$_SESSION['nazwisko']."</p>"."<p><a href = 'user_panel/logout.php'>Wyloguj się</a></p>";
+            print "<p><a href = 'user_panel/userpanel.php'>Rezerwacje</a></p>";
         }
         else 
         {
@@ -45,8 +46,8 @@
     <div>
         <nav>
             <ol>
-                <li><a href="offer/offer.html">Oferta</a></li>
-                <li><a href="products/products.html">Produkty</a>
+                <li><a href="offer/offer.php">Oferta</a></li>
+                <li><a href="products/products.php">Produkty</a>
                     <ul>
                             <li><a href="#">Włosy</a></li>
                             <li><a href="#">Broda</a></li>

@@ -19,7 +19,7 @@
 				
 				document.getElementById("saloon").innerHTML = plik;
 				
-				timer = setTimeout("nextslide()", 1000);
+				timer = setTimeout("nextslide()", 5000);
 			
 			}
 

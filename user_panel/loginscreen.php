@@ -37,8 +37,8 @@
         <div>
             <nav>
                 <ol>
-                    <li><a href="../offer/offer.html">Oferta</a></li>
-                    <li><a href="../products/products.html">Produkty</a>
+                    <li><a href="../offer/offer.php">Oferta</a></li>
+                    <li><a href="../products/products.php">Produkty</a>
                         <ul>
                             <li><a href="#">Włosy</a></li>
                             <li><a href="#">Broda</a></li>
